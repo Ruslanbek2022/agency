@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height:30px;
+    font-size: 18px;
+    margin:0;
+    text-align: center;
+    }
+  
+  .content {
+    padding: 30px 50px;
+  }
+  
+  h1, h2 {
+    line-height: 50px;
+    margin:0;
+  }
+  
+  img {
+    width: 100%;
+    height: 250px;
+  }
+  
+  #showcase {
+    height: 500px;
+    color: white;
+  }
+  .bg-img {
+    position: absolute;
+    z-index:-2;
+    background: url("https://images.unsplash.com/photo-1537498425277-c283d32ef9db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA1fHx0ZWNobm9sb2d5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    opacity: 0.5;
+  }
+  
+  #showcase a {
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(55, 54, 54);
+    padding: 15px 30px;
+    }
+  
+  #showcase a:hover {
+    background-color: white;
+    color: rgb(55, 54, 54)
+  }
+  
+  .section-a {
+    background-color: rgb(232, 232, 232);
+   }
+  #section-b {
+    background-color:#333;
+    padding:20px;
+  }
+  
+  #section-b .box {
+    background-color: white;
+    margin: 15px 0;
+  }
+  .section-d {
+    color:white;
+  }
+  .section-d .blue-box{
+    background-color:#2690d4;
+  }
+  .section-d .gray-box{
+    background-color:#333;
+    
+  }
+  footer{
+    background-color:#000;
+    color: white;
+    padding: 30px 0;
+  }
+  footer p{
+    margin:0;
+  }
+  footer a{
+    text-decoration: none;
+    color: #2690d4;
+  }
+  
+  @media(min-width: 768px) {
+    #showcase .content{
+      padding-top: 70px;
+    }
+  
+    #showcase a {
+      margin-top: 50px;
+    }
+    
+    .section-a p {
+      columns: 2;
+      column-gap: 60px;
+    }
+    #section-b {
+      display: flex;
+      padding: 20px 0;
+    }
+    
+    #section-b .box{
+      margin: 0 15px;
+    }
+    
+    .section-d, footer{ 
+    display: flex;
+    }
+    
+    .section-d .content, footer p {
+      flex:1;
+    }
+  }
